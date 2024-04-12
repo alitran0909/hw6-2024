@@ -86,7 +86,8 @@ document.querySelector("#mute").addEventListener("click", function(){
 document.querySelector("#slider").addEventListener("input", function(){
 	video.volume = document.querySelector("#slider").value * .01;
 	console.log(video.volume);
-	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value;
+	let sliderlevel = document.querySelector("#slider").value
+	document.querySelector("#volume").innerHTML = sliderlevel + '%';
 	console.log("Volume info is updated");
 })
 
