@@ -21,6 +21,8 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function(){
 	console.log("Play Video");
 	video.play();
+	let sliderlevel = document.querySelector("#slider").value
+	document.querySelector("#volume").innerHTML = sliderlevel + '%';
 	console.log("Yay it played");
 })
 
